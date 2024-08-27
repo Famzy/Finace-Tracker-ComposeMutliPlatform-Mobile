@@ -5,22 +5,7 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000198">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="1: pwd &amp;&amp; ls -a" time="0.009764">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="2: git rev-parse --abbrev-ref HEAD" time="0.00765">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="3: npx semantic-release --branches dev --ci false --tag beta" time="18.679737">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.0002">
         
       </testcase>
     

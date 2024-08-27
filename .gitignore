@@ -18,5 +18,5 @@ captures
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 /.ci/
-/.releaserc/.env
+/.releasercdhdhdhdhdhdh/.env
 /composeApp/fastlane/.env.default
