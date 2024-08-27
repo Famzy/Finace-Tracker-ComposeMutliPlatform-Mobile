@@ -23,7 +23,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json'], // Files to commit back to the repository
+        assets: ['../../CHANGELOG.md', '../../package.json'], // Files to commit back to the repository
         message: 'chore(release): [skip ci] Bump version to ${nextRelease.version}\n\n${nextRelease.notes}' // Commit message format
       }
     ]

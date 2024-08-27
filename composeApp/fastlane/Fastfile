@@ -32,9 +32,6 @@ platform :android do
 
 desc "Run semantic-release locally"
 lane :run_semver_local do
-
-  branch_name = options[:branch] || "dev"
-  prerelease_tag = options[:tag] || "beta"
   # See current working dir
   sh "pwd && ls -a"
     # Get the current Git branch
@@ -42,8 +39,8 @@ lane :run_semver_local do
   UI.message("Current branch: #{branch_name}")
 
     # Run semantic-release with the current branch
-#   sh "npx semantic-release --branches #{branch_name} --ci false --tag beta"
-sh "npx semantic-release --branches \"#{branch_name}\" --ci --tag #{prerelease_tag}"
+  sh "npx semantic-release --branches #{branch_name} --ci false --tag beta"
+# sh "npx semantic-release --branches \"#{branch_name}\" --ci --tag #{prerelease_tag}"
 version = ENV['PACKAGE_VERSION']
   UI.message("Using version: #{version}")
   # Extract the new version and print it
