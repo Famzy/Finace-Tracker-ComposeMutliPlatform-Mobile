@@ -5,5 +5,54 @@
   "author": "Eric Lekwa ",
   "semanticRelease": true,
   "pluginName": "@semantic-release/npm",
-  "dependencies": {}
+  "dependencies": {},
+
+  "branches": [
+    {
+      "name": "main",
+      "channel": "latest"
+    },
+    {
+      "name": "release",
+      "channel": "beta",
+      "prerelease": true
+    },
+    {
+      "name": "dev",
+      "channel": "alpha",
+      "prerelease": true
+    }
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/npm",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): update version to ${nextRelease.version} [skip ci]"
+      }
+    ]
+
+  ],
+  "preset": "angular",
+  "tagFormat": "v${version}",
+  "release": {
+    "branches": [
+      "dev",
+      { "name": "main" },
+      { "name": "release" },
+      { "name": "dev" }
+    ]
+  }
+
 }

@@ -19,8 +19,21 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/npm",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/git"
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): update version to ${nextRelease.version} [skip ci]"
+      }
+    ]
 
   ],
   "preset": "angular",
