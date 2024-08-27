@@ -3,15 +3,15 @@ module.exports = {
     'main', // Stable releases
     {
       name: 'dev', // Development branch for beta releases
-      prerelease: 'beta'
+      prerelease: true
     },
     {
       name: 'release', // Release branch for release candidates
-      prerelease: 'rc'
+      prerelease: true
     },
     {
       name: 'feature/*', // Feature branches for custom prereleases
-      prerelease: '${name.replace(/^feature\\//g, "")}' // Uses the branch name as the prerelease tag
+      prerelease: true // Uses the branch name as the prerelease tag
     }
   ],
   plugins: [
