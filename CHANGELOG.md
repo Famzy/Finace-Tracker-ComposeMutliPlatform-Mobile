@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/compare/v1.1.4...v2.0.0) (2024-08-27)
+
+
+### Features
+
+* allow provided config object to extend other configs ([f6fbbfb](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/f6fbbfb10b16de6c95398aa5fb309be9c221d54f))
+
+
+### BREAKING CHANGES
+
+* `extends` key in config file is now used for extending other config files
+
 ## [1.1.4](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/compare/v1.1.3...v1.1.4) (2024-08-27)
 
 
