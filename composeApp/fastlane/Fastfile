@@ -47,9 +47,9 @@ version = ENV['PACKAGE_VERSION']
   UI.message("New version updated in package.json: #{version}")
 
   # Commit and push changes if needed
-  sh "git add package.json"
-  sh "git commit -m 'chore(release): update version to #{version}'"
-  sh "git push origin  #{branch_name}"
+#   sh "git add package.json"
+#   sh "git commit -m 'chore(release): update version to #{version}'"
+#   sh "git push origin  #{branch_name}"
 end
   desc "Deploy a new version to the Google Play"
   lane :deploy do
