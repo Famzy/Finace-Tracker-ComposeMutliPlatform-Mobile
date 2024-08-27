@@ -2,16 +2,21 @@ module.exports = {
   branches: [
     'main', // Stable releases
     {
-      name: 'dev', // Development branch for beta releases
+      name: 'dev',
+       channel: "dev",// Development branch for beta releases
+      prerelease: true
+
+    },
+    {
+      name: 'release',
+      channel: "dev",//// Release branch for release candidates
       prerelease: true
     },
     {
-      name: 'release', // Release branch for release candidates
-      prerelease: true
-    },
-    {
-      name: 'feature/*', // Feature branches for custom prereleases
+      name: 'feature/*',
+       name: 'feature/*',// Feature branches for custom prereleases
       prerelease: true // Uses the branch name as the prerelease tag
+      channel: 'feature/*', prerelease: "rc"
     }
   ],
   plugins: [
