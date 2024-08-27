@@ -1,6 +1,6 @@
 {
   "name": "FinanceTracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "author": "Eric Lekwa ",
   "semanticRelease": true,
@@ -10,14 +10,13 @@
     "main",
     {
       "name": "release",
-
       "prerelease": true
     },
     {
       "name": "dev",
       "prerelease": true
     }
-  ],,
+  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/npm",
@@ -40,5 +39,4 @@
   ],
   "preset": "angular",
   "tagFormat": "v${version}"
-
 }
