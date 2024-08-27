@@ -5,37 +5,37 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000445">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000511">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: pwd &amp;&amp; ls -a" time="0.008546">
+      <testcase classname="fastlane.lanes" name="1: pwd &amp;&amp; ls -a" time="0.008707">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git rev-parse --abbrev-ref HEAD" time="0.007378">
+      <testcase classname="fastlane.lanes" name="2: git rev-parse --abbrev-ref HEAD" time="0.007592">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: npx semantic-release --branches dev --ci false" time="46.026665">
+      <testcase classname="fastlane.lanes" name="3: npx semantic-release --branches dev --ci false" time="48.31486">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git add package.json" time="0.025917">
+      <testcase classname="fastlane.lanes" name="4: git add package.json" time="0.019049">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: git commit -m &apos;chore(release): update version to &apos;" time="0.021382">
+      <testcase classname="fastlane.lanes" name="5: git commit -m &apos;chore(release): update version to &apos;" time="0.022255">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: git push origin  dev" time="3.887093">
+      <testcase classname="fastlane.lanes" name="6: git push origin  dev" time="9.523956">
         
       </testcase>
     
