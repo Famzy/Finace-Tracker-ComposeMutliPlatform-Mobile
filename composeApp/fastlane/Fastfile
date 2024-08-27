@@ -33,7 +33,7 @@ platform :android do
 desc "Run semantic-release locally"
 lane :run_semver_local do
   # Set the GitHub token in environment variable
-  ENV['GITHUB_TOKEN'] = "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"
+
   # See current working dir
   sh "pwd && ls -a"
     # Get the current Git branch
