@@ -1,14 +1,12 @@
 {
   "name": "FinanceTracker",
-  "version": "0.1.0",
+  "version": "1.1.3",
   "private": true,
   "author": "Eric Lekwa ",
   "semanticRelease": true,
   "pluginName": "@semantic-release/npm",
-
   "preset": "angular",
   "tagFormat": "v${version}",
-
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
