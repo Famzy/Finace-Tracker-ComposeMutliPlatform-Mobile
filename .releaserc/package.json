@@ -1,0 +1,34 @@
+{
+  "branches": [
+    {
+      "name": "main",
+      "channel": "latest"
+    },
+    {
+      "name": "release",
+      "channel": "beta",
+      "prerelease": true
+    },
+    {
+      "name": "dev",
+      "channel": "alpha"
+    }
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/npm",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/git"
+
+  ],
+  "preset": "angular",
+  "tagFormat": "v${version}",
+  "release": {
+    "branches": [
+      { "name": "main" },
+      { "name": "release" },
+      { "name": "dev" }
+    ]
+  }
+}

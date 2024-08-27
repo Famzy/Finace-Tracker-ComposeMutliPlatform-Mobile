@@ -1,0 +1,9 @@
+{
+  "name": "Finance Tracker",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Eric Lekwa ",
+  "semanticRelease": true,
+  "pluginName": "@semantic-release/npm",
+  "dependencies": {}
+}
