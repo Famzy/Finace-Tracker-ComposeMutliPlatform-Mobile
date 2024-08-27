@@ -17,7 +17,12 @@ module.exports = {
   plugins: [
     '@semantic-release/commit-analyzer', // Analyzes commit messages to determine version bump
     '@semantic-release/release-notes-generator', // Generates release notes
-    '@semantic-release/changelog', // Updates the CHANGELOG.md file
+     [
+           "@semantic-release/changelog",
+           {
+             "changelogFile": "../../CHANGELOG.md"
+           }
+         ],// Updates the CHANGELOG.md file
     '@semantic-release/npm', // Publishes the release to npm (optional)
     '@semantic-release/github', // Publishes the release to GitHub
     [
