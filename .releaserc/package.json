@@ -11,7 +11,8 @@
     },
     {
       "name": "dev",
-      "channel": "alpha"
+      "channel": "alpha",
+      "prerelease": true
     }
   ],
   "plugins": [
@@ -26,6 +27,7 @@
   "tagFormat": "v${version}",
   "release": {
     "branches": [
+      "dev",
       { "name": "main" },
       { "name": "release" },
       { "name": "dev" }
