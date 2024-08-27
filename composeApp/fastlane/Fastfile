@@ -39,7 +39,7 @@ lane :run_semver_local do
   UI.message("Current branch: #{branch_name}")
 
     # Run semantic-release with the current branch
-  sh "npx semantic-release --branches #{branch_name} --ci false"
+  sh "npx semantic-release  --ci false"
 version = ENV['PACKAGE_VERSION']
   UI.message("Using version: #{version}")
   # Extract the new version and print it
