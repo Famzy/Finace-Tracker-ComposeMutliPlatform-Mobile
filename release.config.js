@@ -15,7 +15,7 @@ module.exports = {
     {
       name: 'feature/*',
        name: 'feature/*',// Feature branches for custom prereleases
-      prerelease: true // Uses the branch name as the prerelease tag
+
       channel: 'feature/*', prerelease: "rc"
     }
   ],
