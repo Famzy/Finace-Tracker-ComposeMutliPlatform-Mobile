@@ -3,8 +3,8 @@ module.exports = {
     'main', // Stable releases
     {
       name: 'dev',
-       channel: "beta",// Development branch for beta releases
-      prerelease: true
+       channel: "dev",// Development branch for beta releases
+      prerelease: "dev"
 
     },
     {
