@@ -1,5 +1,5 @@
 {
-  "name": "Finance Tracker",
+  "name": "FinanceTracker",
   "version": "0.1.0",
   "private": true,
   "author": "Eric Lekwa ",
@@ -7,22 +7,6 @@
   "pluginName": "@semantic-release/npm",
   "dependencies": {},
 
-  "branches": [
-    {
-      "name": "main",
-      "channel": "latest"
-    },
-    {
-      "name": "release",
-      "channel": "beta",
-      "prerelease": true
-    },
-    {
-      "name": "dev",
-      "channel": "alpha",
-      "prerelease": true
-    }
-  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/npm",
@@ -46,13 +30,21 @@
   ],
   "preset": "angular",
   "tagFormat": "v${version}",
+
   "release": {
     "branches": [
-      "dev",
-      { "name": "main" },
-      { "name": "release" },
-      { "name": "dev" }
+      "main",
+      {
+        "name": "release",
+
+        "prerelease": true
+      },
+      {
+        "name": "dev",
+        "prerelease": true
+      }
     ]
   }
+
 
 }

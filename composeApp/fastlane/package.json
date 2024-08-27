@@ -7,21 +7,17 @@
   "pluginName": "@semantic-release/npm",
   "dependencies": {},
   "branches": [
-    {
-      "name": "main",
-      "channel": "latest"
-    },
+    "main",
     {
       "name": "release",
-      "channel": "beta",
+
       "prerelease": true
     },
     {
       "name": "dev",
-      "channel": "alpha",
       "prerelease": true
     }
-  ],
+  ],,
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/npm",
@@ -43,19 +39,6 @@
     ]
   ],
   "preset": "angular",
-  "tagFormat": "v${version}",
-  "release": {
-    "branches": [
-      "dev",
-      {
-        "name": "main"
-      },
-      {
-        "name": "release"
-      },
-      {
-        "name": "dev"
-      }
-    ]
-  }
+  "tagFormat": "v${version}"
+
 }
