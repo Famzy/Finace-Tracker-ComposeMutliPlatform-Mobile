@@ -21,7 +21,19 @@ module.exports = {
     '@semantic-release/commit-analyzer', // Analyzes commit messages to determine version bump
     '@semantic-release/release-notes-generator', // Generates release notes
     '@semantic-release/changelog', // Updates the CHANGELOG.md file
-    '@semantic-release/github', // Publishes the release to GitHub
+     [
+                "@semantic-release/exec",
+                {
+                    verifyReleaseCmd:
+                        "mkdir -p ./artifacts && echo NEXT_VERSION=${nextRelease.version} >> ./artifacts/.VERSION",
+                },
+            ],
+     [
+               "@semantic-release/github",
+               {
+                   assets: "release/*.tgz",
+               },
+           ],
     [
       '@semantic-release/git',
       {
