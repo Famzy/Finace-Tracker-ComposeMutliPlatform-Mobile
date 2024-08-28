@@ -9,12 +9,13 @@ module.exports = {
     },
     {
       name: 'release',
-      channel: "alpha",//// Release branch for release candidates
+      channel: "alpha",// Release branch for release candidates
       prerelease: "alpha"
     },
     {
       name: 'feature/*',
-      channel: 'feature/*', prerelease: "rc"
+      channel: '${name}', // Use the branch name as the channel
+      prerelease: '${name.replace(/^feature\\//, "")}'
     }
   ],
   plugins: [
@@ -24,11 +25,9 @@ module.exports = {
      [
                 "@semantic-release/exec",
                 {
-                    verifyReleaseCmd:
-                        "mkdir -p ./artifacts && echo NEXT_VERSION=${nextRelease.version} >> ./artifacts/.VERSION",
-
-                                                  prepareCmd: 'echo "Preparing release version ${nextRelease.version}"',
-                                                          publishCmd: 'echo "Publishing version ${nextRelease.version}"'
+                    verifyReleaseCmd: "mkdir -p ./artifacts && echo NEXT_VERSION=${nextRelease.version} >> ./artifacts/.VERSION",
+                    prepareCmd: 'echo "Preparing release version ${nextRelease.version}"',
+                    publishCmd: 'echo "Publishing version ${nextRelease.version}"'
                 },
             ],
      [

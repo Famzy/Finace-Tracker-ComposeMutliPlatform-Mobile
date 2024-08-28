@@ -1,3 +1,17 @@
+# [2.1.0-auth.1](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/compare/v2.0.0...v2.1.0-auth.1) (2024-08-28)
+
+
+### Bug Fixes
+
+* second \n\n BREAKING CHANGE: it breaks something # => v2.0.0-beta.2 on [@dev](https://github.com/dev) ([f98451c](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/f98451c2b5d46e152987b722f67285fd9a72ac2e))
+
+
+### Features
+
+* **auth:** Added the needed auth screens ([20ae282](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/20ae28254fc1a90f055d73fda067977f378228c7))
+* **auth:** fixed issues with release tags ([0a6a90a](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/0a6a90a8aafae9577025e359c13b779011be2a88))
+* first feature \n\n BREAKING CHANGE: it breaks something # => v2.0.0-beta.1 on [@dev](https://github.com/dev) ([940016d](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/940016d122f4bd6b7ae944b740df61733150285b))
+
 # [2.1.0-beta.1](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/compare/v2.0.0...v2.1.0-beta.1) (2024-08-28)
 
 
