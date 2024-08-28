@@ -4,7 +4,7 @@ module.exports = {
     {
       name: 'dev',
        channel: "beta",// Development branch for beta releases
-      prerelease: "dev"
+      prerelease: "beta"
 
     },
     {
@@ -26,6 +26,9 @@ module.exports = {
                 {
                     verifyReleaseCmd:
                         "mkdir -p ./artifacts && echo NEXT_VERSION=${nextRelease.version} >> ./artifacts/.VERSION",
+
+                                                  prepareCmd: 'echo "Preparing release version ${nextRelease.version}"',
+                                                          publishCmd: 'echo "Publishing version ${nextRelease.version}"'
                 },
             ],
      [

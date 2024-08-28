@@ -22,3 +22,4 @@ captures
 /composeApp/fastlane/.env.default
 /package-lock.json
 /node_modules/
+/artifacts/
