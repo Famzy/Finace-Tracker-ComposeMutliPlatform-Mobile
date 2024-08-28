@@ -10,7 +10,7 @@ module.exports = {
     {
       name: 'release',
       channel: "alpha",//// Release branch for release candidates
-      prerelease: true
+      prerelease: "alpha"
     },
     {
       name: 'feature/*',
