@@ -1,3 +1,15 @@
+# [2.1.0-dev.1](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/compare/v2.0.0...v2.1.0-dev.1) (2024-08-28)
+
+
+### Bug Fixes
+
+* second \n\n BREAKING CHANGE: it breaks something # => v2.0.0-beta.2 on [@dev](https://github.com/dev) ([f98451c](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/f98451c2b5d46e152987b722f67285fd9a72ac2e))
+
+
+### Features
+
+* first feature \n\n BREAKING CHANGE: it breaks something # => v2.0.0-beta.1 on [@dev](https://github.com/dev) ([940016d](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/commit/940016d122f4bd6b7ae944b740df61733150285b))
+
 # [2.0.0](https://github.com/Famzy/Finace-Tracker-ComposeMutliPlatform-Mobile/compare/v1.1.4...v2.0.0) (2024-08-27)
 
 
