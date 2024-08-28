@@ -9,7 +9,7 @@ module.exports = {
     },
     {
       name: 'release',
-      channel: "alpha",//// Release branch for release candidates
+      channel: "alpha",// Release branch for release candidates
       prerelease: "alpha"
     },
     {
@@ -24,11 +24,9 @@ module.exports = {
      [
                 "@semantic-release/exec",
                 {
-                    verifyReleaseCmd:
-                        "mkdir -p ./artifacts && echo NEXT_VERSION=${nextRelease.version} >> ./artifacts/.VERSION",
-
-                                                  prepareCmd: 'echo "Preparing release version ${nextRelease.version}"',
-                                                          publishCmd: 'echo "Publishing version ${nextRelease.version}"'
+                    verifyReleaseCmd: "mkdir -p ./artifacts && echo NEXT_VERSION=${nextRelease.version} >> ./artifacts/.VERSION",
+                    prepareCmd: 'echo "Preparing release version ${nextRelease.version}"',
+                    publishCmd: 'echo "Publishing version ${nextRelease.version}"'
                 },
             ],
      [
