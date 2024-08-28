@@ -14,7 +14,8 @@ module.exports = {
     },
     {
       name: 'feature/*',
-      channel: 'feature/*', prerelease: "rc"
+      channel: '${name}', // Use the branch name as the channel
+      prerelease: '${name.replace(/^feature\\//, "")}'
     }
   ],
   plugins: [
